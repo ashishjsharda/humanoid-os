@@ -1,0 +1,109 @@
+# HumanoidOS .gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+*.ipynb
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Development/Internal Documentation (not for public repo)
+DEV_STATUS.md
+LAUNCH_ROADMAP.md
+TONIGHT_SUMMARY.md
+EXECUTIVE_SUMMARY.md
+SOURCE_CODE_INDEX.md
+WHERE_ARE_THE_FILES.md
+QUICK_REFERENCE.md
+
+# Build artifacts
+*.tar.gz
+*.zip
+
+# Logs
+*.log
+logs/
+
+# PyBullet cache
+*.bullet
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# OS specific
+Thumbs.db
+.DS_Store
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# Output directories (optional - uncomment if you want to ignore)
+# outputs/
+# results/
+# data/
+
+# Model checkpoints (if you add ML models later)
+*.ckpt
+*.pth
+*.h5
+*.pkl
+
+# Videos and images from demos (optional)
+# demos/*.mp4
+# demos/*.avi
+# demos/*.gif
+# demos/*.png
+# demos/*.jpg
