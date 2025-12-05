@@ -73,7 +73,7 @@ control_loop.register_subsystem("my_controller", my_controller)
 
 ```python
 gait = AdvancedGaitGenerator()
-gait.set_gait(GaitType.CUSTOM, speed=0.5)
+gait.set_gait(GaitType.SIDESTEP_LEFT, speed=0.3)
 ```
 
 ## Design Principles
