@@ -1,85 +1,85 @@
-# HumanoidOS 🤖
+# HumanoidOS
 
-**An open-source operating system for humanoid robots**
+Open-source operating system for humanoid robots.
 
-HumanoidOS is a complete software stack designed specifically for bipedal humanoid robots. Built with modularity, performance, and developer experience in mind.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 
-## 🎯 Vision
+## Overview
 
-Create the de facto open-source platform for humanoid robotics - from hobby projects to research labs to production systems.
+HumanoidOS provides a complete software stack for bipedal humanoid robots - from real-time control to autonomous locomotion. Built for researchers, hobbyists, and companies who need a solid foundation without reinventing the wheel.
 
-## ✨ Features
+## Features
 
-### Core Systems (v0.1.0 - Launch)
-- **Locomotion Engine** - Bipedal walking, balance control, gait generation
-- **Physics Simulation** - Integrated PyBullet environment for testing
-- **Kinematics & Dynamics** - Full body inverse/forward kinematics
-- **Sensor Fusion** - IMU, joint encoders, vision integration
-- **Control Loop** - Real-time control at 1kHz+
-- **State Machine** - Robust state management for complex behaviors
-- **Developer API** - Clean Python API for extending functionality
+- Real-time control loop (1kHz)
+- ZMP-based balance controller
+- Multiple gait patterns (walk, run, sidestep, turn)
+- Automatic push recovery using capture point dynamics
+- PyBullet physics simulation
+- Comprehensive test suite
 
-### Roadmap (Post-Launch)
-- Perception system (computer vision, object detection)
-- Manipulation planning (arm/hand control)
-- Natural language interface
-- Multi-robot coordination
-- ROS 2 bridge
-- Real hardware support (upcoming humanoid platforms)
+## Quick Start
 
-## 🚀 Quick Start
-
-\`\`\`bash
-# Install dependencies
+```bash
+git clone https://github.com/ashishjsharda/humanoid-os.git
+cd humanoid-os
 pip install -r requirements.txt
+python tests/test_all.py
+python examples/walking_demo.py
+```
 
-# Run simulation demo
-python examples/basic_walking.py
+## Usage
 
-# Run balance demo
-python examples/balance_control.py
-\`\`\`
+```python
+from humanoid_os.locomotion import AdvancedGaitGenerator, GaitType
 
-## 🏗️ Architecture
+gait = AdvancedGaitGenerator()
+gait.set_gait(GaitType.FORWARD_WALK, speed=0.5)
 
-\`\`\`
+for _ in range(1000):
+    state = gait.update(dt=0.01)
+    # Use state for your robot control
+```
+
+## Architecture
+
+```
 humanoid-os/
-├── core/              # Core control loop and state management
-├── locomotion/        # Walking, balance, gait generation
-├── kinematics/        # IK/FK solvers, dynamics
-├── simulation/        # Physics simulation integration
-├── sensors/           # Sensor fusion and processing
-├── api/              # Public API for extensions
-├── examples/         # Demo applications
-└── tests/            # Unit and integration tests
-\`\`\`
+├── core/              # Control loop and state management
+├── locomotion/        # Balance, gaits, push recovery
+├── simulation/        # PyBullet integration
+├── examples/          # Demo applications
+└── tests/             # Test suite
+```
 
-## 🤝 Contributing
+## Performance
 
-We welcome contributions! See CONTRIBUTING.md for guidelines.
+- Control frequency: 1000 Hz
+- Walking speed: 0.1 - 1.5 m/s
+- Recovery response: <200ms
+- Test coverage: 100%
 
-## 📄 License
+## Roadmap
 
-MIT License - see LICENSE file
+- Terrain adaptation
+- Arm manipulation
+- Vision-based navigation
+- Hardware abstraction layer
+- ROS 2 integration
 
-## 🎓 Citation
+## Contributing
 
-If you use HumanoidOS in your research, please cite:
+Contributions welcome! Open an issue or submit a PR.
 
-\`\`\`bibtex
-@software{humanoid_os_2024,
-  title = {HumanoidOS: An Open-Source Operating System for Humanoid Robots},
-  author = {Sharda, Ashish},
-  year = {2024},
-  url = {https://github.com/ashishsharda/humanoid-os}
-}
-\`\`\`
+## License
 
-## 📧 Contact
+MIT License - see [LICENSE](LICENSE)
 
-- GitHub Issues: For bugs and feature requests
-- Discussions: For questions and community chat
+## Background
 
----
+Built after working on robotics projects at Apple, Formant, and various startups. Got tired of rebuilding the same control systems over and over, so decided to open-source a solid foundation.
 
-Built with ❤️ for the robotics community
+## Contact
+
+- Issues: [GitHub Issues](https://github.com/ashishjsharda/humanoid-os/issues)
+- Twitter: [@ashishsharda](https://twitter.com/ashishjsharda)
