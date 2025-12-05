@@ -9,10 +9,10 @@ pip install -r requirements.txt
 
 ## Run Demo
 ```bash
-python examples/walking_demo.py
+python examples/kinematics_demo.py
 ```
 
-That's it! Robot walks.
+That's it! The robot performs a zero-gravity actuator system check
 
 ## What You Get
 
