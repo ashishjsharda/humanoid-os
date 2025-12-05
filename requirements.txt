@@ -1,30 +1,12 @@
-# Core dependencies
-numpy>=1.24.0
-scipy>=1.10.0
-pybullet>=3.2.5
-matplotlib>=3.7.0
+# HumanoidOS Requirements
+# Core dependencies for humanoid robot control
 
-# Kinematics and dynamics
-modern-robotics>=1.0.0
-pin>=2.6.0  # Pinocchio (optional, fallback to custom IK)
+# Numerical computing
+numpy>=1.20.0
+scipy>=1.7.0
 
-# Control and state management
-transitions>=0.9.0
-
-# Utilities
-pyyaml>=6.0
-attrs>=23.0.0
-dataclasses-json>=0.6.0
-
-# Development
-pytest>=7.4.0
-black>=23.0.0
-mypy>=1.4.0
-pytest-cov>=4.1.0
+# Physics simulation
+pybullet>=3.2.0
 
 # Visualization
-opencv-python>=4.8.0
-pillow>=10.0.0
-
-# Optional GPU acceleration
-# torch>=2.0.0  # Uncomment for neural network controllers
+matplotlib>=3.5.0
