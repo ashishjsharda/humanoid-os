@@ -59,11 +59,7 @@ dmypy.json
 # Development/Internal Documentation (not for public repo)
 DEV_STATUS.md
 LAUNCH_ROADMAP.md
-TONIGHT_SUMMARY.md
-EXECUTIVE_SUMMARY.md
-SOURCE_CODE_INDEX.md
-WHERE_ARE_THE_FILES.md
-QUICK_REFERENCE.md
+
 
 # Build artifacts
 *.tar.gz
