@@ -31,7 +31,7 @@ python examples/walking_demo.py
 ## Usage
 
 ```python
-from humanoid_os.locomotion import AdvancedGaitGenerator, GaitType
+from locomotion.advanced_gaits import AdvancedGaitGenerator...
 
 gait = AdvancedGaitGenerator()
 gait.set_gait(GaitType.FORWARD_WALK, speed=0.5)
