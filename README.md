@@ -61,11 +61,11 @@ humanoid-os/
 
 ## Roadmap
 
-- Terrain adaptation
-- Arm manipulation
-- Vision-based navigation
-- Hardware abstraction layer
-- ROS 2 integration
+- [ ] Terrain adaptation (Slope/Stairs)
+- [ ] Arm manipulation & IK
+- [ ] Vision-based navigation
+- [ ] Hardware abstraction layer
+- [ ] ROS 2 integration
 
 ## Contributing
 
