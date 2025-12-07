@@ -5,6 +5,10 @@ Open-source operating system for humanoid robots.
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 
+
+https://github.com/user-attachments/assets/32c3d915-4a07-40b2-9bd8-c78669f05bd6
+> *Validation test of the Zero-G Kinematics Engine and Joint Control Loop.*
+
 ## Overview
 
 HumanoidOS provides a complete software stack for bipedal humanoid robots - from real-time control to autonomous locomotion. Built for researchers, hobbyists, and companies who need a solid foundation without reinventing the wheel.
