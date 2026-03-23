@@ -126,6 +126,9 @@ Add `--no-gui` to any demo to run headless.
 - [x] Vision-based navigation
 - [x] Hardware abstraction layer
 - [x] ROS 2 integration
+- [ ] Whole-body motion planning
+- [ ] Multi-robot coordination
+- [ ] Reinforcement learning gait optimization
 
 ## Contributing
 
