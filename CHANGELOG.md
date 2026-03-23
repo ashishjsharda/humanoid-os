@@ -20,3 +20,4 @@ Initial release of the core architecture.
 ### Next Up
 - Terrain adaptation (slopes)
 - Inverse Kinematics (IK) for arm manipulation
+- t
